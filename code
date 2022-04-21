@@ -218,9 +218,7 @@ def make_change(amount):
   for key, value in coin_dict.items():
     ans += f'{key}:{value}/'
   return ans[:-1]
-
   
-
 print(factorial(10)) #362880
 print(classify_grade(92)) #A
 print(average_weight(1,5,7,500)) #6.9405940594059405
