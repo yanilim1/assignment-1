@@ -30,8 +30,8 @@ def factorial(x):
   for i in range(2, x + 1):
     ans *= i
   return ans 
-
-def classify_grade(number_grade):
+  
+  def classify_grade(number_grade):
   '''Item 2.
   Classify Grade. 2 points.
   
@@ -58,28 +58,21 @@ def classify_grade(number_grade):
   # Write your code below this line
   if number_grade <= 100 and number_grade >= 92:
     return 'A'
-
   if number_grade <= 91.9 and number_grade >= 86:
     return 'B+'
-
   if number_grade <= 85.9 and number_grade >= 80:
     return 'B'
-
   if number_grade <= 79.9 and number_grade >= 74:
     return 'C+'
-
   if number_grade <= 73.9 and number_grade >= 67:
     return 'C'
-
   if number_grade <= 66.9 and number_grade >= 60:
     return 'D'
-
   if number_grade <= 59.9 and number_grade >= 0:
     return 'F'
-
   return 'Invalid Grade'
-
-def average_weight(item_quantity_1, item_weight_1, item_quantity_2, item_weight_2):
+  
+  def average_weight(item_quantity_1, item_weight_1, item_quantity_2, item_weight_2):
     '''Item 3.
     Average Weight. 3 points.
     
@@ -105,8 +98,8 @@ def average_weight(item_quantity_1, item_weight_1, item_quantity_2, item_weight_
     '''
     # Write your code below this line
     return (item_quantity_1 * item_weight_1 + item_quantity_2 * item_weight_2) / (item_weight_1 + item_weight_2)
-
-def string_sum(string):
+    
+    def string_sum(string):
   '''Item 4.
   String Sum. 3 points.
   
@@ -166,8 +159,8 @@ def distance(x_1, y_1, x_2, y_2):
   x_dist = abs(x_2 - x_1)
   y_dist = abs(y_2 - y_1)
   return math.sqrt(x_dist + y_dist)
-
-def make_change(amount):
+  
+  def make_change(amount):
   '''Item 6.
   Make Change. 5 points.
   
@@ -218,7 +211,6 @@ def make_change(amount):
   for key, value in coin_dict.items():
     ans += f'{key}:{value}/'
   return ans[:-1]
-  
 print(factorial(10)) #362880
 print(classify_grade(92)) #A
 print(average_weight(1,5,7,500)) #6.9405940594059405
