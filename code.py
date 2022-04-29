@@ -99,7 +99,7 @@ def average_weight(item_quantity_1, item_weight_1, item_quantity_2, item_weight_
     # Write your code below this line
     return (item_quantity_1 * item_weight_1 + item_quantity_2 * item_weight_2) / (item_weight_1 + item_weight_2)
   
-  def string_sum(string):
+def string_sum(string):
   '''Item 4.
   String Sum. 3 points.
   
