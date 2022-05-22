@@ -97,7 +97,7 @@ def average_weight(item_quantity_1, item_weight_1, item_quantity_2, item_weight_
         the weighted average weight of one item.
     '''
     # Write your code below this line
-    return (item_quantity_1 * item_weight_1 + item_quantity_2 * item_weight_2) / (item_weight_1 + item_weight_2)
+    return (item_quantity_1 * item_weight_1 + item_quantity_2 * item_weight_2) / (item_quantity_1 + item_quantity_2)
   
 def string_sum(string):
   '''Item 4.
@@ -120,7 +120,7 @@ def string_sum(string):
   '''
   # Write your code below this line
   import re  
-  str_list = re.findall(r'\d+', string)
+  str_list = re.findall(r'\d', string)
   int_list = [int(x) for x in str_list]
   return sum(int_list)
 
